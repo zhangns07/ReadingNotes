@@ -1,0 +1,3386 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\begin_modules
+theorems-ams
+eqs-within-sections
+figs-within-sections
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding iso8859-1
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement h
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize letterpaper
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1.15in
+\topmargin 0.71in
+\rightmargin 1.15in
+\bottommargin 0.71in
+\secnumdepth 5
+\tocdepth 5
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\reals}{\mathbf{R}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\integers}{\mathbf{Z}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\naturals}{\mathbf{N}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\rationals}{\mathbf{Q}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ca}{\mathcal{A}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cb}{\mathcal{B}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\cc}{\mathcal{C}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\cd}{\mathcal{D}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ce}{\mathcal{E}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cf}{\mathcal{F}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cg}{\mathcal{G}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ch}{\mathcal{H}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ci}{\mathcal{I}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cj}{\mathcal{J}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ck}{\mathcal{K}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cl}{\mathcal{L}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cm}{\mathcal{M}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cn}{\mathcal{N}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\co}{\mathcal{O}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cp}{\mathcal{P}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cq}{\mathcal{Q}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\calr}{\mathcal{R}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cs}{\mathcal{S}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ct}{\mathcal{T}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cu}{\mathcal{U}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cv}{\mathcal{V}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cw}{\mathcal{W}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cx}{\mathcal{X}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cy}{\mathcal{Y}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cz}{\mathcal{Z}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ind}[1]{1(#1)}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\pr}{\mathbb{P}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\predsp}{\cy}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\outsp}{\cy}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\prxy}{P_{\cx\times\cy}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\prx}{P_{\cx}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\prygivenx}{P_{\cy\mid\cx}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ex}{\mathbb{E}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\var}{\textrm{Var}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\cov}{\textrm{Cov}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sgn}{\textrm{sgn}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sign}{\textrm{sign}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\kl}{\textrm{KL}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\law}{\mathcal{L}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\eps}{\varepsilon}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\as}{\textrm{ a.s.}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\io}{\textrm{ i.o.}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ev}{\textrm{ ev.}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\convd}{\stackrel{d}{\to}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\convp}{\stackrel{p}{\to}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\eqd}{\stackrel{d}{=}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\del}{\nabla}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\loss}{V}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\risk}{R}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\emprisk}{\hat{R}_{\ell}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\lossfnl}{L}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\emplossfnl}{\hat{L}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\empminimizer}[1]{\hat{#1}_{\ell}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\minimizer}[1]{#1_{*}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\etal}{\textrm{et. al.}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\tr}{\operatorname{tr}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\trace}{\operatorname{trace}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\diag}{\text{diag}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\rank}{\text{rank}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\linspan}{\text{span}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\proj}{\text{Proj}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\argmax}{\operatornamewithlimits{arg\, max}}
+{\mbox{argmax}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\argmin}{\operatornamewithlimits{arg\, min}}
+{\mbox{argmin}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\bfx}{\mathbf{x}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\bfy}{\mathbf{y}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\bfl}{\mathbf{\lambda}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\bfm}{\mathbf{\mu}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\calL}{\mathcal{L}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vw}{\boldsymbol{w}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vx}{\boldsymbol{x}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vxi}{\boldsymbol{\xi}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\valpha}{\boldsymbol{\alpha}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vbeta}{\boldsymbol{\beta}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vsigma}{\boldsymbol{\sigma}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vmu}{\boldsymbol{\mu}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vtheta}{\boldsymbol{\theta}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vd}{\boldsymbol{d}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vs}{\boldsymbol{s}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vt}{\boldsymbol{t}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vh}{\boldsymbol{h}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\ve}{\boldsymbol{e}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vf}{\boldsymbol{f}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vg}{\boldsymbol{g}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vz}{\boldsymbol{z}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vk}{\boldsymbol{k}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\va}{\boldsymbol{a}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vb}{\boldsymbol{b}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vv}{\boldsymbol{v}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vy}{\boldsymbol{y}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\hil}{\ch}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\rkhs}{\hil}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Title
+Deep Learning Reading/Class Notes
+\end_layout
+
+\begin_layout Author
+Ningshan Zhang
+\end_layout
+
+\begin_layout Standard
+Things to add/read
+\end_layout
+
+\begin_layout Itemize
+convnet paper: parameter details
+\end_layout
+
+\begin_layout Itemize
+word2vec
+\end_layout
+
+\begin_layout Itemize
+language model perplexity
+\end_layout
+
+\begin_layout Section
+Chap 6 Deep Feedforward Networks
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\textbf{activation function}$
+\end_inset
+
+: the nonlinear function apply after affine transformation
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\textbf{sigmoid}$
+\end_inset
+
+ for Bernoulli output: 
+\begin_inset Formula $\sigma\left(z\right)=\dfrac{1}{1+e^{-z}}$
+\end_inset
+
+ saturates very quickly.
+ Unless using log-likelihood loss, other loss like mean squared will saturates
+ anytime 
+\begin_inset Formula $\sigma\left(z\right)$
+\end_inset
+
+ saturates, and gradient learning will be hard.
+ Log-likelihood loss 
+\begin_inset Formula 
+\[
+-\log\pr\left(y\right)=-\log\sigma\left(\left(2y-1\right)z\right)
+\]
+
+\end_inset
+
+will saturate only when 
+\begin_inset Formula $\left(1-2y\right)z$
+\end_inset
+
+ is very negative - thus the model already has the right answer.
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\textbf{softmax}$
+\end_inset
+
+ for multinomial output: 
+\begin_inset Formula $\mbox{softmax}\left(z\right)_{i}=\dfrac{\exp\left(z_{i}\right)}{\sum_{j}\exp\left(z_{j}\right)}$
+\end_inset
+
+.
+ Similar to sigmoid situation, the log-likelihood can avoid the saturation
+ problem.
+ Other loss functions will suffer the saturate problem unless they can invert
+ the saturating activating function.
+ 
+\begin_inset Formula 
+\begin{align*}
+\log\mbox{softmax}\left(z\right)_{i} & =z_{i}-\log\sum_{j}\exp\left(z_{j}\right)\\
+ & \approx z_{i}-\max_{j}z_{j}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+numerically stable variant of softmax:
+\begin_inset Formula 
+\[
+\mbox{softmax}\left(z\right)=\mbox{softmax}\left(z-\max_{i}z_{i}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\textbf{ReLU}$
+\end_inset
+
+: 
+\begin_inset Formula $g\left(z\right)=\max\left\{ 0,z\right\} $
+\end_inset
+
+.
+ It's not differentiable at 
+\begin_inset Formula $z=0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+It will only saturate when 
+\begin_inset Formula $g\left(z\right)=0$
+\end_inset
+
+.
+ Therefore efficient for gradient based learning.
+ 
+\end_layout
+
+\begin_layout Itemize
+In software implementation, the ReLU defines left and right derivatives
+ at 
+\begin_inset Formula $z=0$
+\end_inset
+
+ and use either one.
+ This may be justified by observing that gradient based optimization on
+ a digital computer is subject to numerical error anyway.
+ When a function is asked to evaluate 
+\begin_inset Formula $g\left(0\right)$
+\end_inset
+
+, it's very unlikely that the underlying value is 
+\begin_inset Formula $0$
+\end_inset
+
+.
+ Instead, it was likely to be some small value 
+\begin_inset Formula $\eps$
+\end_inset
+
+ that's founded to 
+\begin_inset Formula $0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $\textbf{tanh}$
+\end_inset
+
+: 
+\begin_inset Formula $\tanh\left(z\right)=\dfrac{e^{z}-e^{-z}}{e^{z}+e^{-z}}=2\sigma\left(2z\right)-1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+linear hidden units reduces the number of parameters: consider 
+\begin_inset Formula $W^{T}x$
+\end_inset
+
+ where 
+\begin_inset Formula $W$
+\end_inset
+
+ is a 
+\begin_inset Formula $p\times n$
+\end_inset
+
+ matrix.
+ If we factor out 
+\begin_inset Formula $W=\underset{p\times q}{\underbrace{U}}\underset{q\times n}{\underbrace{V}}$
+\end_inset
+
+, then there are only 
+\begin_inset Formula $\left(p+n\right)q$
+\end_inset
+
+ parameters - for small 
+\begin_inset Formula $q$
+\end_inset
+
+, this could be a considerable saving in parameters, at the cost of constraining
+ 
+\begin_inset Formula $W$
+\end_inset
+
+ to be low-rank (at most 
+\begin_inset Formula $q$
+\end_inset
+
+).
+ But sometimes low rank is sufficient.
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\textbf{universal approximation properties}$
+\end_inset
+
+: a feedforward network with a linear output layer and at least one hidden
+ layer with any 'squashing' activation function (e.g.
+ sigmoid) can approximate any Borel measurable function, with desired non-zero
+ error, provided that the network has enough hidden units.
+ It has also been proved for a wide class of activations functions (other
+ than 'squashing' which saturates on both ends), including ReLU.
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\textbf{back propagation}$
+\end_inset
+
+: one example.
+ 
+\begin_inset Formula $x=f\left(w\right),y=f\left(x\right),z=f\left(y\right)$
+\end_inset
+
+.
+ Compute gradient 
+\begin_inset Formula 
+\begin{align*}
+\dfrac{\partial z}{\partial w} & =\dfrac{\partial z}{\partial y}\dfrac{\partial y}{\partial x}\dfrac{\partial x}{\partial w}\\
+ & =f^{\prime}\left(y\right)f^{\prime}\left(x\right)f^{\prime}\left(w\right)\\
+ & =f^{\prime}\left(f\left(f\left(w\right)\right)\right)f^{\prime}\left(f\left(w\right)\right)f^{\prime}\left(w\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Chap 7 Regularization for Deep Learning
+\end_layout
+
+\begin_layout Itemize
+data augmentation
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+injecting noise 
+\end_layout
+
+\begin_layout Itemize
+when benchmarking, it's important to take the effect of data augmentation
+ into account.
+ Operations that are generally applicable (e.g.
+ adding Gaussian noise to input) is considered part of algorithm; while
+ operations that are specific to one application domain (e.g.
+ cropping image, rotating image) are considered separate pre-processing
+ steps.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $\textbf{early stopping}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+use validation set to decide when to stop - when the error or validation
+ set has not improved for some amount of time.
+\end_layout
+
+\begin_layout Itemize
+early stopping acts as a regularizer: in the case of simple linear model
+ with quadratic error function and gradient descent, early stopping is equivalen
+t to 
+\begin_inset Formula $L^{2}$
+\end_inset
+
+ regularization.
+ Let 
+\begin_inset Formula $\eps$
+\end_inset
+
+ be step-size in SGD, 
+\begin_inset Formula $\tau$
+\end_inset
+
+ be number of steps, 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ be 
+\begin_inset Formula $L^{2}$
+\end_inset
+
+ penalty parameter.
+ Then
+\begin_inset Formula 
+\begin{align*}
+\tau & \approx\dfrac{1}{\eps\alpha}\\
+\alpha & \approx\dfrac{1}{\tau\eps}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $\textbf{dropout}$
+\end_inset
+
+: an inexpensive approximation to training and evaluating a bagged ensemble
+ of all possible sub-networks.
+ The sub-networks can be formed by removing non-output units from the underlying
+ base network.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+how to train: using minibatch.
+ For every minibatch, sample a binary 'mask' vector 
+\begin_inset Formula $\mu$
+\end_inset
+
+ that decides which units are dropped out.
+ Then run forward and back propagation and update parameters as usual.
+ 
+\end_layout
+
+\begin_layout Itemize
+not exactly same as bagging: a) models share parameters; b) some model(subnetwor
+k) might not be trained at all, especially when the number of hidden units
+ are large.
+\end_layout
+
+\begin_layout Itemize
+how to make prediction:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+arithmetic mean: 
+\begin_inset Formula $\sum_{\mu}p\left(\mu\right)p\left(y\vert x,\mu\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+geometric mean: unnormalized probability
+\begin_inset Formula 
+\[
+\tilde{p}_{\mbox{ensemble}}\left(y\vert x\right)=\left(\prod_{\mu}p\left(y\vert x,\mu\right)\right)^{1/2^{d}}
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $d$
+\end_inset
+
+ is the number of units.
+ Then re-normalize the ensemble.
+\end_layout
+
+\begin_layout Itemize
+weight scaling inference rule: approximate 
+\begin_inset Formula $p_{\mbox{ensemble}}$
+\end_inset
+
+ by evaluating 
+\begin_inset Formula $p\left(y\vert x\right)$
+\end_inset
+
+ with all units, but with the weights going out of unit 
+\begin_inset Formula $i$
+\end_inset
+
+ multiplied by the probability of including unit 
+\begin_inset Formula $i$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+adversarial training: discourage highly sensitive locally linear behavior,
+ encourage the network to be locally constant in the neighborhood of the
+ training data.
+ This can be used in semi-supervised learning: given an unlabeled data 
+\begin_inset Formula $x$
+\end_inset
+
+, find an adversarial example 
+\begin_inset Formula $x^{\prime}$
+\end_inset
+
+ that causes the classifier to give different labels than 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ Then train the classifier to assign same label to 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $x^{\prime}$
+\end_inset
+
+.
+ This encourages the classifier to learn a function that is robust to small
+ changes anywhere along the manifold where the unlabeled data lies.
+ 
+\end_layout
+
+\begin_layout Section
+Chap 8 Optimization
+\end_layout
+
+\begin_layout Itemize
+about using 
+\begin_inset Formula $\textbf{minibatch}$
+\end_inset
+
+: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+larger batches provide a more accurate estimate of gradient, but with less
+ than linear improvement
+\end_layout
+
+\begin_layout Itemize
+when using GPU, it's common for power of 2 batch sizes to offer better runtime
+\end_layout
+
+\begin_layout Itemize
+small batches can offer regularization effect.
+ But training with small batch size might require a small learning rate
+ to maintain stability due to the high variance.
+ Therefore the total training time can be very high due to the small learning
+ rate and more steps to observe the entire training set
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $\textbf{ill-conditioning}$
+\end_inset
+
+ of the Hessian matrix 
+\begin_inset Formula $H=\del^{2}J\left(\theta\right)$
+\end_inset
+
+: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+condition number of a matrix: 
+\begin_inset Formula $\max_{i,j}\dfrac{\lambda_{i}}{\lambda_{j}}$
+\end_inset
+
+ where 
+\begin_inset Formula $\lambda$
+\end_inset
+
+s are the eigenvalues.
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $J\left(\theta-\eps g\right)-J\left(\theta\right)=\dfrac{1}{2}\eps^{2}g^{T}Hg-\eps g^{T}g$
+\end_inset
+
+.
+ Ill-conditioning becomes a problem when 
+\begin_inset Formula $\dfrac{1}{2}\eps^{2}g^{T}Hg-\eps g^{T}g>0$
+\end_inset
+
+.
+ So the learning rate must be shrunk to compensate for the strong curvature.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+local minima: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+neural network and any model with model identifiability problem will have
+ multiple local minima.
+ Non-identifiability: swap units, rescale weights, etc.
+ Local minima due to identifiability have same loss function value, therefore
+ not problematic.
+ 
+\end_layout
+
+\begin_layout Itemize
+Negative example: one can construct a neural network has local minima with
+ higher cost than global minimum.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $\textbf{saddle point}$
+\end_inset
+
+: in high dimensional space, local minima are rare and saddle pints are
+ more common.
+ Intuition: saddle points have both positive and negative eigenvalues, while
+ local minima has only positive eigenvalues.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+for many random function, the eigenvalues become more likely to be positive
+ when we reach regions of lower cost.
+ Therefore a stationary point with low cost are more likely to be local
+ minima.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $\textbf{cliffs and clipping}$
+\end_inset
+
+: neutral network with many layers might have extreme steep regions resembling
+ a cliff.
+ This results from multiplication of several large weights together.
+ At the edge of cliff, the gradient step can move the parameters extremely
+ far, possibly loosing most of the optimization work that had been done.
+ A heuristics: gradient clipping, that prevents the update to be too large.
+ 
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename cliff_clipping.png
+	scale 80
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Cliff
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\textbf{momentum}$
+\end_inset
+
+: designed to accelerate learning, especially in the face of high curvature,
+ small but consistent gradients, or noisy gradients.
+ Physics intuition: think of parameter 
+\begin_inset Formula $\theta$
+\end_inset
+
+ as the position of an object with mass 1.
+ Every iteration has time unit 1, therefore 
+\begin_inset Formula $\theta_{t+1}=\theta_{t}+v_{t+1}$
+\end_inset
+
+ where 
+\begin_inset Formula $v$
+\end_inset
+
+ is the velocity.
+ Negative gradient works like the force that moves the object.
+ By Newton's law of motion, 
+\begin_inset Formula 
+\begin{align*}
+\mbox{new momentum} & =\mbox{force}+\mbox{velocity}.
+\end{align*}
+
+\end_inset
+
+Therefore, (with slight adjustment with 
+\begin_inset Formula $\eps$
+\end_inset
+
+ and 
+\begin_inset Formula $\alpha$
+\end_inset
+
+)
+\begin_inset Formula 
+\begin{align*}
+v_{t+1} & =-\eps\del_{\theta}J\left(\theta_{t}\right)+\alpha v_{t}\\
+\theta_{t+1} & =\theta_{t}+v_{t+1}
+\end{align*}
+
+\end_inset
+
+See the effect of momentum on ill conditioned hessian.
+ 
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename momentum.png
+	scale 80
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Momentum
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\textbf{Nesterov momentum}$
+\end_inset
+
+: a slight change (or 'correction factor').
+ The update rule:
+\begin_inset Formula 
+\begin{align*}
+v_{t+1} & =\alpha_{v}-\eps\del_{\theta}J\left(\theta_{t}+\alpha v_{t}\right)\\
+\theta_{t+1} & =\theta_{t}+v_{t+1}
+\end{align*}
+
+\end_inset
+
+The difference is where the gradient is evaluated.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\textbf{batch normalization}$
+\end_inset
+
+: In practice, we update all of the layers simultaneously.
+ When we make the update, unexpected results can happen because many functions
+ composed together are changed simultaneously, using updates that were computed
+ under the assumption that the other functions remain constant.
+ Batch normalization solves this problem.
+ (But I don't quite understand why exactly is this effective).
+ Batch normalization is a way of reparametrization.
+ Let 
+\begin_inset Formula $H$
+\end_inset
+
+ be a minibatch of activations of the layer to normalize, arranged as a
+ design matrix 
+\begin_inset Formula $n\times p$
+\end_inset
+
+.
+ To normalize 
+\begin_inset Formula $H$
+\end_inset
+
+, we replace it with
+\begin_inset Formula 
+\begin{align*}
+H^{\prime} & =\dfrac{H-\mu}{\sigma}\\
+\mu_{i} & =\dfrac{1}{n}\sum H_{n,i}\\
+\sigma_{i} & =\sqrt{\delta+\dfrac{1}{n}\sum\left(H_{n,i}-\mu_{i}\right)^{2}}
+\end{align*}
+
+\end_inset
+
+where 
+\begin_inset Formula $\delta$
+\end_inset
+
+ is to make 
+\begin_inset Formula $\sigma_{i}$
+\end_inset
+
+ positive.
+ 
+\end_layout
+
+\begin_layout Section
+Chap 9 Convolutional Network
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\textbf{convolution}$
+\end_inset
+
+: For example, if we use a two-dimensional image I as our input, we probably
+ also want to use a two-dimensional kernel K
+\begin_inset Formula 
+\begin{align*}
+S\left(i,j\right) & =\sum_{m}\sum_{n}I\left(m,n\right)K\left(i-m,j-n\right)\\
+ & =\sum_{m}\sum_{n}I\left(i-m,j-n\right)K\left(m,n\right)
+\end{align*}
+
+\end_inset
+
+In this scenario we says 'we have flipped the kernel'.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\textbf{corss-correlation}$
+\end_inset
+
+: without flipping the kernel
+\begin_inset Formula 
+\[
+S\left(i,j\right)=\sum_{m}\sum_{n}I\left(i+m,j+n\right)K\left(m,n\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+motivation: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+sparse interactions: reduce the fully connected graph to sparsely connected,
+ if kernel is smaller than the input
+\end_layout
+
+\begin_layout Itemize
+parameter sharing: using same parameter for more than one function
+\end_layout
+
+\begin_layout Itemize
+equivariant representation: if the input changes, the output changes in
+ the same way.
+ Specifically, a function 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ is equivariant to a function 
+\begin_inset Formula $g$
+\end_inset
+
+ if 
+\begin_inset Formula $f\left(g\left(x\right)\right)=g\left(f\left(x\right)\right)$
+\end_inset
+
+.
+ In CNN case, let 
+\begin_inset Formula $g$
+\end_inset
+
+be image shifting, then convolutional operator is invariant to it.
+ It helps in practice because some signals might appear within a neighborhood.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $\textbf{pooling}$
+\end_inset
+
+: linear transform -> nonlinear activation (call this two detector units)
+ -> pooling.
+ A pooling replaces output at a certain location with a summary statistics
+ of nearby outputs.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+examples: max pooling, average pooling, 
+\begin_inset Formula $L^{p}$
+\end_inset
+
+ pooling.
+ 
+\end_layout
+
+\begin_layout Itemize
+helps to make representation become approximately invariant to small translation
+s of the input.
+ Useful when we care about 'whether some feature is present' than 'exactly
+ where it is'
+\end_layout
+
+\begin_layout Itemize
+pooling over outputs from different kernels, the features can learn which
+ transformations to become invariant.
+ For example it can learn to be invariant to rotation, with max pooling
+ over several filters.
+\end_layout
+
+\begin_layout Itemize
+use fewer pooling units than detector units, report summary for pooling
+ regions spaced 
+\begin_inset Formula $k$
+\end_inset
+
+ pixels apart than than 
+\begin_inset Formula $1$
+\end_inset
+
+ pixel apart.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $\textbf{stride}$
+\end_inset
+
+: skip certain pixels in original image during convolution operation.
+ Specifically,
+\begin_inset Formula 
+\[
+S_{i,j}=\sum_{m}\sum_{n}I\left(\left(i-1\right)\times s+m,\left(j-1\right)\times s+n\right)K\left(m,n\right)
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $s$
+\end_inset
+
+ is the stride.
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\textbf{zero padding}$
+\end_inset
+
+: so input size won't shrunk after each convolution.
+\end_layout
+
+\begin_layout Section
+Chap 10 Recurrent Neural Networks
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\textbf{unfolding}$
+\end_inset
+
+: consider a dynamic system driven by an external signal 
+\begin_inset Formula $x$
+\end_inset
+
+with hidden states 
+\begin_inset Formula $h$
+\end_inset
+
+: 
+\begin_inset Formula $h^{\left(t\right)}=f\left(h^{^{\left((\right)}},x^{\left(t\right)};\theta\right)$
+\end_inset
+
+.
+ We can represent the unfolded recurrence after 
+\begin_inset Formula $t$
+\end_inset
+
+ steps with a function 
+\begin_inset Formula $g^{\left(t\right)}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+h^{\left(t\right)} & =g^{\left(t\right)}\left(x^{\left(t\right)},x^{\left(t-1\right)},\dots,x^{\left(1\right)};\theta\right)\\
+ & =f\left(h^{\left(t-1\right)},x^{\left(t\right)};\theta\right)
+\end{align*}
+
+\end_inset
+
+Unfolding introduces two main advantages:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+the model always has same input size (the size of 
+\begin_inset Formula $x$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+share parameters at every time step
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $\textbf{recurrent neural networks}$
+\end_inset
+
+: some examples
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+produces  output 
+\begin_inset Formula $o^{\left(t\right)}$
+\end_inset
+
+ at each time step, and have connections between hidden units 
+\begin_inset Formula $h^{\left(t-1\right)}$
+\end_inset
+
+ and 
+\begin_inset Formula $h^{\left(t\right)}$
+\end_inset
+
+.
+ Loss 
+\begin_inset Formula $L^{\left(t\right)}=l\left(y^{\left(t\right)},o^{\left(t\right)}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Maps an input sequence to an output sequence of the same length
+\end_layout
+
+\begin_layout Itemize
+It is universal, in the sense that any function computable by a Turing machine
+ can be computed by such a RNN with finite size.
+ 
+\end_layout
+
+\begin_layout Itemize
+A specific example
+\begin_inset Formula 
+\begin{align*}
+a^{\left(t\right)} & =b+Wh^{\left(t-1\right)}+Ux^{\left(t\right)}\\
+h^{\left(t\right)} & =\tanh\left(a^{\left(t\right)}\right)\\
+o^{\left(t\right)} & =c+Vh^{\left(t\right)}\\
+\hat{y}^{\left(t\right)} & =\mbox{softmax}\left(o^{\left(t\right)}\right)
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+ & L\left(\left\{ x^{\left(1\right)},\dots,x^{\left(\tau\right)}\right\} ,\left\{ y^{\left(1\right)},\dots,y^{\left(\tau\right)}\right\} \right)\\
+= & \sum_{t}L^{\left(t\right)}=-\sum_{t}\log p_{\mbox{model}}\left(y^{\left(t\right)}\vert x^{\left(1\right)},\dots,x^{\left(t\right)}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Back propagation through time 
+\begin_inset Formula $\textbf{BPTT}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+produce output 
+\begin_inset Formula $o^{\left(t\right)}$
+\end_inset
+
+ at each time step, and have connections only from 
+\begin_inset Formula $o^{\left(t-1\right)}$
+\end_inset
+
+ to 
+\begin_inset Formula $h^{\left(t\right)}$
+\end_inset
+
+.
+ Loss 
+\begin_inset Formula $L^{\left(t\right)}=l\left(y^{\left(t\right)},o^{\left(t\right)}\right)$
+\end_inset
+
+.
+ (No hidden-to-hidden connection)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Maps an input sequence to an output sequence of the same length
+\end_layout
+
+\begin_layout Itemize
+Less powerful than previous example, cannot simulate a universal Turing
+ machine.
+ (My understanding is it has lower model capacity)
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\textbf{teacher forcing}$
+\end_inset
+
+: during training, replace 
+\begin_inset Formula $o^{\left(t-1\right)}$
+\end_inset
+
+ with 
+\begin_inset Formula $y^{\left(t-1\right)}$
+\end_inset
+
+ when computing 
+\begin_inset Formula $h^{\left(t\right)}$
+\end_inset
+
+, therefore decoupled all time steps and training can be parallelized.
+ No need for BPTT here.
+ During testing, still use 
+\begin_inset Formula $o^{\left(t-1\right)}$
+\end_inset
+
+ to compute 
+\begin_inset Formula $h^{\left(t\right)}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+have connections between hidden units 
+\begin_inset Formula $h^{\left(t-1\right)}$
+\end_inset
+
+ and 
+\begin_inset Formula $h^{\left(t\right)}$
+\end_inset
+
+, and produce a single output 
+\begin_inset Formula $o^{\tau}$
+\end_inset
+
+.
+ Loss 
+\begin_inset Formula $L=l\left(y,o^{\left(\tau\right)}\right)$
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "20text%"
+special "none"
+height "1in"
+height_special "totalheight"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename RNN1.png
+	scale 30
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "20text%"
+special "none"
+height "1in"
+height_special "totalheight"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename RNN2.png
+	scale 30
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "20text%"
+special "none"
+height "1in"
+height_special "totalheight"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename RNN3.png
+	scale 30
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Three RNNs.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+RNN as directed graphical model: an example where RNN only has a sequence
+ 
+\begin_inset Formula $Y=\left\{ y^{\left(1\right)},\dots,y^{\left(\tau\right)}\right\} $
+\end_inset
+
+, no input 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ The input at time 
+\begin_inset Formula $t$
+\end_inset
+
+ is simply 
+\begin_inset Formula $y^{\left(t-1\right)}$
+\end_inset
+
+.
+ Then the RNN defines a graphical model on all 
+\begin_inset Formula $y$
+\end_inset
+
+s:
+\begin_inset Formula 
+\[
+\pr\left(Y\right)=\prod_{t=1}^{\tau}\pr\left(y^{\left(t\right)}\vert y^{\left(t-1\right)},\dots,y^{\left(1\right)}\right)
+\]
+
+\end_inset
+
+Usually the model is fully connected, because we believe that all past inputs
+ should have an influence on current & future.
+ By introducing the hidden units 
+\begin_inset Formula $h^{\left(t\right)}$
+\end_inset
+
+ as random variables into the model, we can decouple the past and the future.
+ 
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename RNN_as_DAG.png
+	scale 50
+	rotateOrigin center
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Hidden states decouples past and future
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Sequence conditioned on context: extending the previous graphical model
+ idea.
+ Suppose all the hidden layers are conditioned on a single vector 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ 
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Sequence_conditioned_context.png
+	scale 50
+	rotateOrigin center
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sequence conditioned on context
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Sequence-to-sequence architectures: input and output can have different
+ length.
+ (1) use an encoder (e.g.
+ RNN) to process the input sequence and emit a context C, usually a function
+ of final hidden state.
+ (2) use a decoder that is conditioned on that fixed-length vector C to
+ generate output sequence 
+\begin_inset Formula $Y$
+\end_inset
+
+.
+ The decoder could be the 'sequence conditioned on context' RNN.
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\textbf{gated RNN}$
+\end_inset
+
+.
+ Suppose there are 
+\begin_inset Formula $L$
+\end_inset
+
+ layers of hidden states.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+LSTM cell: 
+\begin_inset Formula $h_{t}^{l-1},h_{t-1}^{l},c_{t-1}^{l}\to h_{t}^{l},c_{t}^{l}$
+\end_inset
+
+ , where 
+\begin_inset Formula $c_{t}^{l}$
+\end_inset
+
+ is the memory cell, think of 
+\begin_inset Formula $h_{t}^{l-1}$
+\end_inset
+
+ as input 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ 
+\begin_inset Formula 
+\begin{align*}
+\left(\begin{array}{c}
+\mbox{i (input)}\\
+\mbox{f (forget)}\\
+\mbox{o (output)}\\
+g
+\end{array}\right) & =\left(\begin{array}{c}
+\sigma\\
+\sigma\\
+\sigma\\
+\tanh
+\end{array}\right)\mbox{Linear}\left(\begin{array}{c}
+h_{t}^{l-1}\\
+h_{t-1}^{l}
+\end{array}\right)\\
+c_{t}^{l} & =f\odot c_{t-1}^{l}+i\odot g\\
+h_{t}^{l} & =o\odot\tanh\left(c_{t}^{l}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+GRU cell: 
+\begin_inset Formula $h_{t}^{l-1},h_{t-1}^{l}\to h_{t}^{l}$
+\end_inset
+
+.
+ 
+\begin_inset Formula 
+\begin{align*}
+\left(\begin{array}{c}
+\mbox{r (reset)}\\
+\mbox{z (update)}
+\end{array}\right) & =\left(\begin{array}{c}
+\sigma\\
+\sigma
+\end{array}\right)\mbox{Linear}\left(\begin{array}{c}
+h_{t}^{l-1}\\
+h_{t-1}^{l}
+\end{array}\right)\\
+\tilde{h}_{t}^{l} & =\tanh\left(W_{1}h_{t}^{l-1}+W_{2}\odot r\odot h_{t-1}^{l}\right)\\
+h_{t}^{l} & =\left(1-z\right)h_{t-1}^{l}+z\tilde{h}_{t}^{l}
+\end{align*}
+
+\end_inset
+
+notice the order of 
+\begin_inset Formula $r$
+\end_inset
+
+ and 
+\begin_inset Formula $W_{2}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Chap 14 Autoencoders
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\textbf{sparse autoencoder}$
+\end_inset
+
+: The general framework is to minimize the penalized reconstruction error:
+\begin_inset Formula 
+\[
+\min_{f,g}L\left(x,g\left(f\left(x\right)\right)\right)+\Omega\left(f\left(x\right)\right),
+\]
+
+\end_inset
+
+Denote 
+\begin_inset Formula $h=f\left(x\right)$
+\end_inset
+
+, the output of encoder.
+ When 
+\begin_inset Formula $\Omega\left(f\left(x\right)\right)$
+\end_inset
+
+ encourages sparsity, this is called 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+sparse autoencoder.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+One example:
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ [Andrew Ng, CS294A Lecture notes].
+ For every hidden node 
+\begin_inset Formula $h_{j}$
+\end_inset
+
+ that is the output of sigmoid, define it's average value/activation
+\begin_inset Formula 
+\[
+\hat{\rho}_{j}=\dfrac{1}{T}\sum_{i=1}^{T}h_{j}\left(Y_{i}\right)
+\]
+
+\end_inset
+
+We want 
+\begin_inset Formula $\hat{\rho}_{j}$
+\end_inset
+
+ to be close to 
+\begin_inset Formula $\rho=0.05$
+\end_inset
+
+ as possible, therefore very few nodes are 'activated' and the code will
+ not be overcomplete.
+ Define the objective function as 
+\begin_inset Formula 
+\[
+L\left(\left\{ Y_{i}\right\} _{1}^{T}\right)=\dfrac{1}{T}\sum_{i=1}^{T}E_{W}\left(Y_{i}\right)+\eta\sum_{j=1}^{J}KL\left(\rho\parallel\hat{\rho}_{j}\right)
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $J$
+\end_inset
+
+ is number of nodes, 
+\begin_inset Formula $KL\left(\rho\parallel\hat{\rho}_{j}\right)=\rho\log\dfrac{\rho}{\hat{\rho}_{j}}+\left(1-\rho\right)\log\dfrac{1-\rho}{1-\hat{\rho}_{j}}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+latent variable view: treat code 
+\begin_inset Formula $h$
+\end_inset
+
+ as latent variable.
+ We can view this as 'approximating maximum likelihood training of a generative
+ model with latent variables'.
+ Suppose we have a model
+\begin_inset Formula 
+\[
+p\left(x,h\right)=p\left(h\right)p\left(x\vert h\right),
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $h$
+\end_inset
+
+ is a latent variable with some 'prior' distribution (Note: 
+\begin_inset Formula $h$
+\end_inset
+
+ is not a parameter).
+ The data likelihood can be decomposed as
+\begin_inset Formula 
+\[
+L\left(x\right)=\sum_{h}\log p\left(x,h\right).
+\]
+
+\end_inset
+
+We can think of autoencoder as approximating 
+\begin_inset Formula $L\left(x\right)$
+\end_inset
+
+ with a single point estimate.
+ More specifically,
+\begin_inset Formula 
+\begin{align*}
+g\left(h\right) & =\argmax_{x}p\left(x\vert h\right)\\
+L\left(x,g\left(h\right)\right) & =-\log p\left(x\vert h\right)\\
+\Omega\left(h\right) & =-\log p\left(h\right)
+\end{align*}
+
+\end_inset
+
+ Therefore
+\begin_inset Formula 
+\begin{align*}
+\min_{h}L\left(x,g\left(h\right)\right)+\Omega\left(h\right) & \iff\max_{h}\log p\left(x,h\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\textbf{denoising autoencoders (DAE)}$
+\end_inset
+
+: where 
+\begin_inset Formula $\tilde{x}$
+\end_inset
+
+ is a copy of 
+\begin_inset Formula $x$
+\end_inset
+
+ that has been corrupted by some noise.
+ 
+\begin_inset Formula 
+\[
+\min_{g,f}L\left(x,g\left(f\left(\tilde{x}\right)\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\textbf{contractive autoencoder (CAE)}$
+\end_inset
+
+: penalize the derivatives.
+\begin_inset Formula 
+\[
+\min_{g,f}L\left(x,g\left(f\left(x\right)\right)\right)+\Omega\left(h,x\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Omega\left(h,x\right)=\lambda\sum_{i}\left\Vert \del_{x}h_{i}\right\Vert ^{2}
+\]
+
+\end_inset
+
+This will learn an encoder that doesn't change much with small 
+\begin_inset Formula $x$
+\end_inset
+
+ change.
+ One issue with CAE is that, the encoder could consist of multiplying the
+ input by a small constant 
+\begin_inset Formula $\eps$
+\end_inset
+
+ and the decoder could consist of dividing the code by 
+\begin_inset Formula $\eps$
+\end_inset
+
+.
+ As 
+\begin_inset Formula $\eps\to0$
+\end_inset
+
+, the 
+\begin_inset Formula $\Omega\left(h\right)\to0$
+\end_inset
+
+ as well, meanwhile the system has perfect reconstruction.
+ Therefore one need to tie the weights of 
+\begin_inset Formula $f$
+\end_inset
+
+ and 
+\begin_inset Formula $g$
+\end_inset
+
+ (e.g make the weight to be same scale).
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\textbf{stochastic encoder and decoder}$
+\end_inset
+
+: instead of learning a deterministic function, learn a distribution instead.
+ 
+\begin_inset Formula 
+\begin{align*}
+p_{encoder}\left(x\right) & =p\left(h\vert x\right)\\
+p_{decoder}\left(h\right) & =p\left(x\vert h\right)
+\end{align*}
+
+\end_inset
+
+The 
+\begin_inset Formula $p_{encoder}\left(x\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $p_{decoder}\left(h\right)$
+\end_inset
+
+ doesn't have to be conditional distributions compatible with a single joint
+ distribution 
+\begin_inset Formula $p\left(x,h\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\textbf{energy based framework}$
+\end_inset
+
+: [Ranzato, M.
+ A.
+ (2007).
+ A Unified Energy-Based Framework for Unsupervised Learning] Many unsupervised
+ models can be viewed as a scalar-valued energy function 
+\begin_inset Formula $E\left(Y\right)$
+\end_inset
+
+ that operates on the input data 
+\begin_inset Formula $Y$
+\end_inset
+
+.
+ The function 
+\begin_inset Formula $E\left(Y\right)$
+\end_inset
+
+ should have low value on training data and high values when 
+\begin_inset Formula $Y$
+\end_inset
+
+ is dissimilar to any training data (think about learning a manifold).
+ The goal of unsupervised learning is to find a good function 
+\begin_inset Formula $E_{W}\left(Y\right)$
+\end_inset
+
+, where 
+\begin_inset Formula $W\in\cw$
+\end_inset
+
+ indicates the parameter.
+ In application like reconstruction, after we have trained a model 
+\begin_inset Formula $E_{W^{*}}\left(Y\right)$
+\end_inset
+
+ and then given a new point 
+\begin_inset Formula $Y^{\prime}$
+\end_inset
+
+, we would try to find an area of low energy near 
+\begin_inset Formula $Y^{\prime}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+connection with encoder-decoder system: in encoder-decoder system, the goal
+ is to find a code/representation of input, and reconstruct the data from
+ code.
+ Most of these systems can be seen as below:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+First, define encoder and decoder functions 
+\begin_inset Formula $F_{e}$
+\end_inset
+
+ and 
+\begin_inset Formula $F_{d}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Given any (data, code) combinations, i.e.
+ 
+\begin_inset Formula $\left(Y,Z\right)$
+\end_inset
+
+, define energy:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Encoding energy 
+\begin_inset Formula $E_{e}\left(Y,Z\right)=L_{e}\left(F_{e}\left(Y\right),Z\right)$
+\end_inset
+
+, the difference between 
+\begin_inset Formula $Z$
+\end_inset
+
+ and predicted code 
+\begin_inset Formula $F_{e}\left(X\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $L_{e}$
+\end_inset
+
+ is some loss function.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Decoding energy 
+\begin_inset Formula $E_{d}\left(Y,Z\right)=L_{d}\left(Y,F_{d}\left(Z\right)\right)$
+\end_inset
+
+, the difference between 
+\begin_inset Formula $Y$
+\end_inset
+
+ and reconstructed data 
+\begin_inset Formula $F_{d}\left(Z\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $L_{d}$
+\end_inset
+
+ is some loss function.
+\end_layout
+
+\begin_layout Enumerate
+Define total energy 
+\begin_inset Formula $E\left(Y,Z\right)=\gamma E_{e}\left(Y,Z\right)+E_{d}\left(Y,Z\right)$
+\end_inset
+
+, where 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ sets the tradeoff
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Find the optimal code 
+\begin_inset Formula $Z^{*}\left(Y\right)=\argmin_{Z}E\left(Y,Z\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Define the energy 
+\begin_inset Formula $E\left(Y\right)=E\left(Y,Z^{*}\left(Y\right)\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The 
+\begin_inset Formula $E\left(Y\right)$
+\end_inset
+
+ is the energy function in previous discussion.
+ A few notes:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $F_{e},F_{d}$
+\end_inset
+
+ are parametrized by some 
+\begin_inset Formula $W$
+\end_inset
+
+, so is 
+\begin_inset Formula $E\left(Y\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+It's a little bit weird that you define an encoder but don't use its output
+ as optimal code.
+ Actually when you let 
+\begin_inset Formula $\gamma\to\infty$
+\end_inset
+
+ , 
+\begin_inset Formula $Z^{*}\left(Y\right)=F_{e}\left(Y\right)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Examples:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+PCA: 
+\begin_inset Formula $Y\in\reals^{M}$
+\end_inset
+
+, 
+\begin_inset Formula $Z\in\reals^{N}$
+\end_inset
+
+, 
+\begin_inset Formula $\cw_{N}=\left\{ W\in\reals^{N\times M}:WW^{T}=I\right\} $
+\end_inset
+
+, where 
+\begin_inset Formula $N\le M$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $\gamma=\infty$
+\end_inset
+
+, 
+\begin_inset Formula $Z*\left(Y\right)=F_{e}\left(Y\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula 
+\begin{align*}
+F_{e}\left(Y\right) & =WY\\
+F_{d}\left(Z\right) & =W^{T}Z\\
+E_{e}\left(Y,Z\right) & =\parallel WY-Z\parallel^{2}\\
+E_{d}\left(Y,Z\right) & =\parallel Y-W^{T}Z\parallel^{2}\\
+E\left(Y\right) & =\parallel Y-W^{T}WY\parallel^{2}
+\end{align*}
+
+\end_inset
+
+Therefore only points in the subspace spanned by 
+\begin_inset Formula $W^{T}$
+\end_inset
+
+ will have zero energy.
+ It naturally regularize the energy function.
+ 
+\end_layout
+
+\begin_layout Itemize
+Kmeans: 
+\begin_inset Formula $Y\in\reals^{M}$
+\end_inset
+
+, 
+\begin_inset Formula $\cw_{K}=\left\{ W\in\reals^{K\times M}\right\} $
+\end_inset
+
+.
+ Code variable 
+\begin_inset Formula $Z=\left\{ 1,2,..,N\right\} ^{K}$
+\end_inset
+
+.
+ No 
+\begin_inset Formula $F_{e}$
+\end_inset
+
+ and 
+\begin_inset Formula $E_{e}$
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{align*}
+F_{d}\left(Z\right) & =W_{Z}\\
+E_{d}\left(Y,Z\right) & =\parallel Y-W_{Z}\parallel^{2}\\
+E\left(Y\right) & =\min_{Z}E\left(Y,Z\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+problems with minimizing 
+\begin_inset Formula $E\left(Y\right)$
+\end_inset
+
+ on training data: if we only minimize energy on training data, i.e
+\begin_inset Formula 
+\[
+\min_{W\in\cw}\sum_{i=1}^{T}E_{W}\left(Y_{i}\right)
+\]
+
+\end_inset
+
+, it won't necessarily make the 
+\begin_inset Formula $E_{W^{*}}\left(Y\right)$
+\end_inset
+
+ high on dissimilar data points.
+ This is called 
+\begin_inset Formula $\textbf{catastrophic collapse}$
+\end_inset
+
+.
+ Several solutions to prevent this:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Pull up the energies of selected unobserved points.
+ See 'negative log-likelihood loss' session for an example.
+\end_layout
+
+\begin_layout Itemize
+Limit the energy function's complexity so that only a small subset of data
+ can have low energies.
+ For example PCA.
+ 
+\end_layout
+
+\begin_layout Standard
+Both can be seen as adding a regularization term.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+negative log-likelihood loss: given energy function 
+\begin_inset Formula $E_{W}\left(Y\right)$
+\end_inset
+
+, we can define a distribution on 
+\begin_inset Formula $Y$
+\end_inset
+
+ as
+\begin_inset Formula 
+\[
+P_{W}\left(Y\right)=\dfrac{\exp\left\{ -\beta E_{W}\left(Y\right)\right\} }{\int\exp\left\{ -\beta E_{W}\left(Y\right)\right\} dy}
+\]
+
+\end_inset
+
+Instead of minimizing empirical energy, we can maximize the log-likelihood,
+ or minimize logloss
+\begin_inset Formula 
+\[
+\argmax_{W\in\cw}\prod_{i=1}^{T}P\left(Y_{i}\right)=\argmin_{W\in\cw}\dfrac{1}{T}\sum_{i=1}^{T}E_{W}\left(Y_{i}\right)+\dfrac{1}{\beta}\int\exp\left\{ -\beta E_{W}\left(Y\right)\right\} dy
+\]
+
+\end_inset
+
+The second term can be seen as 'pulling up' energy on unobserved points,
+ i.e.
+ it serves as the 'regularization term'.
+ One problem with logloss: notice that if we add a constant to energy function,
+ the probability density doesn't change.
+ Therefore minimizing logloss will not guarantee to return a small 
+\begin_inset Formula $E_{W}$
+\end_inset
+
+ on training data (even though energy will be even higher on unobserved
+ points), which could be problematic in reconstruction problems.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Sparsity
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\textbf{hard-thresholding operator}$
+\end_inset
+
+: 
+\begin_inset Formula $\mbox{ht}\left(\beta;\mu\right)=1\left\{ \left|\beta\right|\ge\mu\right\} \beta$
+\end_inset
+
+.
+ It provides solution to the following problem
+\begin_inset Formula 
+\begin{align*}
+\min_{\alpha\in\reals^{p}}\dfrac{1}{2} & \parallel\beta-\alpha\parallel_{2}^{2}\mbox{ s.t. }\parallel\alpha\parallel_{0}\le k,
+\end{align*}
+
+\end_inset
+
+The solution is given by
+\begin_inset Formula 
+\[
+\alpha_{j}=\mbox{ht}\left(\beta_{j};\mu\right)
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\mu$
+\end_inset
+
+ is the k-th largest value among 
+\begin_inset Formula $\left|\beta_{i}\right|,i=1,\dots,p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\textbf{soft-thresholding operator}$
+\end_inset
+
+: 
+\begin_inset Formula $\mbox{st}\left(\beta;\lambda\right)=\sign\left(\beta\right)\max\left(\left|\beta\right|-\lambda,0\right)$
+\end_inset
+
+.
+ It provides solution to the following problem
+\begin_inset Formula 
+\[
+\min_{\alpha\in\reals^{p}}\dfrac{1}{2}\parallel\beta-\alpha\parallel_{2}^{2}+\lambda\parallel\alpha\parallel_{1},
+\]
+
+\end_inset
+
+The solution is given by
+\begin_inset Formula 
+\[
+\alpha_{j}=\mbox{st}\left(\beta_{j};\lambda\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\textbf{spectral sparsity}$
+\end_inset
+
+: let 
+\begin_inset Formula $s$
+\end_inset
+
+ be the set of eigenvalues of matrix A (s is called 
+\begin_inset Formula $\textbf{spectrum}$
+\end_inset
+
+ of A).
+ Two regularization methods for matrix:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\mbox{rank}\left(A\right)=\parallel s\left(A\right)\parallel_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\mbox{trace}\left(A\right)=\parallel s\left(A\right)\parallel_{1}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $\textbf{dictionary learning}$
+\end_inset
+
+: looking for a dictionary 
+\begin_inset Formula $D$
+\end_inset
+
+ adapted to training set 
+\begin_inset Formula 
+\[
+\min_{D\in\cc,A}\dfrac{1}{n}\parallel x_{i}-D\alpha_{i}\parallel_{2}^{2}+\lambda\psi\left(\alpha_{i}\right)
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $A=\left\{ \alpha_{1},\dots,\alpha_{n}\right\} ,\cc=\left\{ D:\forall j,\parallel d_{j}\parallel_{2}\le1\right\} $
+\end_inset
+
+.
+ This can also be seen from matrix factorization point of view:
+\begin_inset Formula 
+\[
+\min_{D,A}\dfrac{1}{n}\parallel X-DA\parallel_{F}^{2}+\lambda\psi\left(A\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+image preprocess
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\textbf{centering}$
+\end_inset
+
+: 
+\begin_inset Formula $x_{i}\leftarrow x_{i}-\bar{x}_{i}1$
+\end_inset
+
+.
+ (preprocess only using 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\textbf{contrast normalization}$
+\end_inset
+
+: 
+\begin_inset Formula $x_{i}\leftarrow\dfrac{1}{\max\left(\parallel x_{i}\parallel_{2},\eta\right)}x_{i}$
+\end_inset
+
+.
+ (preprocess only using 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\textbf{whitening}$
+\end_inset
+
+ after centering: 
+\begin_inset Formula $x_{i}\leftarrow VS^{\dagger}U^{T}x_{i}$
+\end_inset
+
+, where 
+\begin_inset Formula $\dfrac{1}{\sqrt{n}}X=USV^{T}$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $\dfrac{1}{n}XX^{T}=VV^{T}$
+\end_inset
+
+ is close to identity.
+ (preprocess using all 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+how to deal with RGB channels: centering, normalizing and whitening each
+ channel independently.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $\textbf{image denoising}$
+\end_inset
+
+.
+ One method: given fixed dictionary 
+\begin_inset Formula $D$
+\end_inset
+
+, a patch 
+\begin_inset Formula $y_{i}$
+\end_inset
+
+ is denoised as follows:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+center 
+\begin_inset Formula $y_{i}$
+\end_inset
+
+: 
+\begin_inset Formula $y_{i}^{c}\leftarrow y_{i}-\mu_{i}$
+\end_inset
+
+ where 
+\begin_inset Formula $\mu_{i}=\bar{y}_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+find sparse code that approximates 
+\begin_inset Formula $y_{i}^{c}$
+\end_inset
+
+ up to noise level:
+\begin_inset Formula 
+\[
+\min_{\alpha_{i}}\parallel\alpha_{i}\parallel_{0}\mbox{ s.t }\parallel y_{i}^{c}-D\alpha_{i}\parallel_{2}^{2}\le\eps
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+the clean estimate 
+\begin_inset Formula $\hat{x}_{i}\leftarrow\alpha_{i}+\hat{\mu}_{i}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+important inequality for smooth functions: if 
+\begin_inset Formula $f$
+\end_inset
+
+ is continuous and 
+\begin_inset Formula $\del f$
+\end_inset
+
+ is 
+\begin_inset Formula $L$
+\end_inset
+
+-Lipschitz.
+ (
+\begin_inset Formula $f$
+\end_inset
+
+ doesn't have to be convex).
+ Then 
+\begin_inset Formula $\forall\alpha,\beta$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+f\left(\alpha\right)\le f\left(\beta\right)+\del f\left(\beta\right)\left(\alpha-\beta\right)+\dfrac{L}{2}\parallel\alpha-\beta\parallel_{2}^{2}
+\]
+
+\end_inset
+
+Therefore to solve the general problem
+\begin_inset Formula 
+\[
+\min_{\alpha}f\left(\alpha\right),
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $f$
+\end_inset
+
+ is convex and 
+\begin_inset Formula $\del f$
+\end_inset
+
+ is 
+\begin_inset Formula $L$
+\end_inset
+
+-Lipschitz, consider surrogate function.
+ Specifically, 
+\begin_inset Formula 
+\begin{align*}
+f\left(\alpha\right) & \le f\left(\alpha^{t}\right)+\del f\left(\alpha^{t}\right)\left(\alpha-\alpha^{t}\right)+\dfrac{L}{2}\parallel\alpha-\alpha^{t}\parallel_{2}^{2}\\
+ & =C_{\alpha^{t}}+\dfrac{L}{2}\parallel\alpha^{t}-\dfrac{1}{L}\del f\left(\alpha^{t}\right)-\alpha\parallel_{2}^{2}=g_{t}\left(\alpha\right)\\
+\Rightarrow\alpha^{t+1} & =\argmin_{\alpha}g_{t}\left(\alpha\right)=\alpha^{t}-\dfrac{1}{L}\del f\left(\alpha^{t}\right)
+\end{align*}
+
+\end_inset
+
+This is a gradient descent step.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+sparse reconstruction with 
+\begin_inset Formula $l_{0}$
+\end_inset
+
+ norm.
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+Problem in Ivanov
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ form: 
+\begin_inset Formula 
+\[
+\min_{\alpha}\dfrac{1}{2}\parallel x-D\alpha\parallel_{2}^{2}\mbox{ s.t. }\parallel\alpha\parallel_{0}\le k
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+coordinate descent algorithm: matching pursuit
+\end_layout
+
+\begin_layout Itemize
+active-set algorithm: orthogonal matching pursuit
+\end_layout
+
+\begin_layout Itemize
+(projected) gradient descent algorithm: 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\textbf{iterative hard-thresholding}$
+\end_inset
+
+.
+ 
+\begin_inset Formula 
+\[
+\alpha\leftarrow\prod_{\parallel.\parallel_{0}\le k}\left[\alpha+\eta D^{T}\left(x-D\alpha\right)\right]
+\]
+
+\end_inset
+
+Hard-thresholding happens at projection.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+sparse reconstruction with 
+\begin_inset Formula $l_{1}$
+\end_inset
+
+ norm.
+ One can still use projected gradient descent to solve Ivanov form:
+\begin_inset Formula 
+\[
+\min_{\alpha}\dfrac{1}{2}\parallel x-D\alpha\parallel_{2}^{2}\mbox{ s.t. }\parallel\alpha\parallel_{1}\le\mu
+\]
+
+\end_inset
+
+To solve Tikhonov form
+\begin_inset Formula 
+\[
+\min_{\alpha}\dfrac{1}{2}\parallel x-D\alpha\parallel_{2}^{2}+\lambda\parallel\alpha\parallel_{1}
+\]
+
+\end_inset
+
+The objective function is not differentiable.
+ Need to use 
+\begin_inset Formula $\textbf{proximal gradient descent}$
+\end_inset
+
+.
+ Consider the general problem
+\begin_inset Formula 
+\[
+\min_{\alpha}f\left(\alpha\right)+\psi\left(\alpha\right)
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\del f$
+\end_inset
+
+ is 
+\begin_inset Formula $L$
+\end_inset
+
+-Lipschitz and 
+\begin_inset Formula $\psi$
+\end_inset
+
+ is not differentiable.
+ Still consider the surrogate function 
+\begin_inset Formula 
+\[
+g_{t}\left(\alpha\right)=C_{\alpha^{t}}+\dfrac{L}{2}\parallel\alpha^{t}-\dfrac{1}{L}\del f\left(\alpha^{t}\right)-\alpha\parallel_{2}^{2}
+\]
+
+\end_inset
+
+and the update rule is 
+\begin_inset Formula 
+\begin{align*}
+\alpha^{t+1} & =\argmin_{\alpha}g_{t}\left(\alpha\right)+\psi\left(\alpha\right)\\
+ & =\argmin_{\alpha}\dfrac{1}{2}\parallel\alpha^{t}-\dfrac{1}{L}\del f\left(\alpha^{t}\right)-\alpha\parallel_{2}^{2}+\dfrac{1}{L}\psi\left(\alpha\right)
+\end{align*}
+
+\end_inset
+
+Therefore one need to efficiently compute 
+\begin_inset Formula $\textbf{proximal operator}$
+\end_inset
+
+ of 
+\begin_inset Formula $\psi$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\alpha\leftarrow\argmin_{\alpha}\dfrac{1}{2}\parallel\beta-\alpha\parallel_{2}^{2}+\lambda\psi\left(\alpha\right)
+\]
+
+\end_inset
+
+In the case 
+\begin_inset Formula $\psi\left(\alpha\right)=\parallel\alpha\parallel_{1}$
+\end_inset
+
+, the proximal operator is exactly the soft-thresholding operator.
+ The resulting algorithm is called 
+\begin_inset Formula $\textbf{iterative soft-thresholding }$
+\end_inset
+
+ algorithm.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\textbf{proximal gradient descent}$
+\end_inset
+
+: motived by above analysis.
+ Proximal operator is officially defined as
+\begin_inset Formula 
+\[
+\mbox{prox}_{h,\lambda}\left(x\right)=\argmin_{\alpha}\dfrac{1}{2}\parallel x-\alpha\parallel_{2}^{2}+\lambda h\left(\alpha\right)
+\]
+
+\end_inset
+
+Consider the optimization function
+\begin_inset Formula 
+\[
+\min_{\alpha}g\left(\alpha\right)+h\left(\alpha\right)
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+ is convex and differentiable, 
+\begin_inset Formula $h\left(\alpha\right)$
+\end_inset
+
+ convex but not differentiable.
+ 
+\begin_inset Formula $\textbf{Proximal gradient descent}$
+\end_inset
+
+ use the update rule
+\begin_inset Formula 
+\[
+\alpha_{t+1}=\mbox{prox}_{h,\eta}\left(\alpha_{t}-\eta\del g\left(\alpha_{t}\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\textbf{iterative shrinkage-thresholding algorithm}$
+\end_inset
+
+ (ISTA).
+ ISTA is a proximal gradient descent algorithm: 
+\begin_inset Formula 
+\begin{align*}
+\min_{\alpha}\dfrac{1}{2} & \parallel x-D\alpha\parallel_{2}^{2}+\lambda\parallel\alpha\parallel_{1}\\
+\alpha^{t+1} & \leftarrow\mbox{st}\left(\alpha^{t}+\eta D^{T}\left(x-D\alpha^{t}\right);\lambda\right)
+\end{align*}
+
+\end_inset
+
+where 
+\begin_inset Formula $\mbox{st}\left(\beta;\lambda\right)$
+\end_inset
+
+ is the soft-thresholding operator.
+ 
+\end_layout
+
+\begin_layout Section
+t-SNE
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\textbf{stochastic neighbor embedding (SNE)}$
+\end_inset
+
+: want to learn low dimensional embedding 
+\begin_inset Formula $y_{i}$
+\end_inset
+
+ of high dimensional point 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+.
+ First define conditional probability based on Euclidean distance in original
+ high dimension
+\begin_inset Formula 
+\[
+p_{j\vert i}=\dfrac{\exp\left(-\parallel x_{i}-x_{j}\parallel_{2}^{2}/2\sigma_{i}^{2}\right)}{\sum_{k\ne i}\exp\left(-\parallel x_{i}-x_{k}\parallel_{2}^{2}/2\sigma_{i}^{2}\right)}\mbox{, }p_{i\vert i}=0.
+\]
+
+\end_inset
+
+Similarly define the conditional probability based on distance in low dimension
+\begin_inset Formula 
+\[
+q_{j\vert i}=\dfrac{\exp\left(-\parallel y_{i}-y_{j}\parallel_{2}^{2}\right)}{\sum_{k\ne i}\exp\left(-\parallel y_{i}-y_{k}\parallel_{2}^{2}\right)},\mbox{ }q_{i\vert i}=0.
+\]
+
+\end_inset
+
+SNE aims to minimize the difference between the two distributions under
+ the measure of KL divergence.
+ The cost function is given by 
+\begin_inset Formula 
+\[
+C=\sum_{i}\mbox{KL}\left(P_{i}\parallel Q_{i}\right)=\sum_{i}\sum_{j}p_{j\vert i}\log\dfrac{p_{j\vert i}}{q_{j\vert i}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+how to chose 
+\begin_inset Formula $\sigma_{i}$
+\end_inset
+
+: chose it such that 
+\begin_inset Formula $\textbf{perplexity}$
+\end_inset
+
+ of 
+\begin_inset Formula $P_{i}$
+\end_inset
+
+ equals prefixed amount.
+ 
+\begin_inset Formula $\mbox{Perp}\left(P_{i}\right)=2^{-\sum_{j}p_{j\vert i}\log_{2}p_{j\vert i}}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+symmetric SNE:
+\begin_inset Formula 
+\begin{align*}
+p_{ij} & =\dfrac{\exp\left(-\parallel x_{i}-x_{j}\parallel_{2}^{2}/2\sigma^{2}\right)}{\sum_{k\ne l}\exp\left(-\parallel x_{k}-x_{l}\parallel_{2}^{2}/2\sigma^{2}\right)},\mbox{ }p_{ii}=0\\
+q_{ij} & =\dfrac{\exp\left(-\parallel y_{i}-y_{j}\parallel_{2}^{2}\right)}{\sum_{k\ne l}\exp\left(-\parallel y_{k}-y_{l}\parallel_{2}^{2}\right)},\mbox{ }q_{ii}=0\\
+C & =\mbox{KL}\left(P\parallel Q\right)=\sum_{i,j}p_{ij}\log\dfrac{p_{ij}}{q_{ij}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+the crowding problem: (my understanding, might not be right) mainly due
+ to the light tail of Gaussian distribution, there's not enough capacity
+ to represent different large distance in low dimensional space.
+ As a result, a lot data points will be crushed to the center of map, preventing
+ gaps/clusters to appear.
+ Detailed explanation see the original paper.
+ [Maaten, L.
+ Van Der, & Hinton, G.
+ (2008).
+ Visualizing Data using t-SNE].
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\textbf{t-SNE}$
+\end_inset
+
+: use 1-degree t-distribution in low dimensional space, because it has heavy
+ tails:
+\begin_inset Formula 
+\[
+q_{ij}=\dfrac{\left(1+\parallel y_{i}-y_{j}\parallel^{2}\right)^{-1}}{\sum_{k\ne l}\left(1+\parallel y_{k}-y_{l}\parallel^{2}\right)^{-1}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Loss functions
+\end_layout
+
+\begin_layout Itemize
+cross-entropy loss
+\begin_inset Formula 
+\[
+l\left(y,\hat{y}\right)=-\sum_{i}y_{i}\log\hat{y}_{i}
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $y=\left[0,\dots,0,1,0,\dots,0\right]^{T}$
+\end_inset
+
+ is one-hot vector.
+ 
+\end_layout
+
+\begin_layout Itemize
+perplexity
+\end_layout
+
+\end_body
+\end_document
