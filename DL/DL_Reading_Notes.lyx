@@ -577,14 +577,6 @@ Things to add/read
 \end_layout
 
 \begin_layout Itemize
-convnet paper: parameter details
-\end_layout
-
-\begin_layout Itemize
-word2vec
-\end_layout
-
-\begin_layout Itemize
 language model perplexity
 \end_layout
 
@@ -739,7 +731,7 @@ In software implementation, the ReLU defines left and right derivatives
 
 \begin_layout Itemize
 linear hidden units reduces the number of parameters: consider 
-\begin_inset Formula $W^{T}x$
+\begin_inset Formula $Wx$
 \end_inset
 
  where 
@@ -1059,6 +1051,14 @@ s are the eigenvalues.
 \end_layout
 
 \begin_layout Itemize
+optimal learning rate: 
+\begin_inset Formula $\dfrac{1}{\max_{i}\lambda_{i}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
 \begin_inset Formula $J\left(\theta-\eps g\right)-J\left(\theta\right)=\dfrac{1}{2}\eps^{2}g^{T}Hg-\eps g^{T}g$
 \end_inset
 
@@ -1255,7 +1255,7 @@ Momentum
  The update rule:
 \begin_inset Formula 
 \begin{align*}
-v_{t+1} & =\alpha_{v}-\eps\del_{\theta}J\left(\theta_{t}+\alpha v_{t}\right)\\
+v_{t+1} & =\alpha v_{t}-\eps\del_{\theta}J\left(\theta_{t}+\alpha v_{t}\right)\\
 \theta_{t+1} & =\theta_{t}+v_{t+1}
 \end{align*}
 
@@ -2865,6 +2865,14 @@ how to deal with RGB channels: centering, normalizing and whitening each
  channel independently.
 \end_layout
 
+\begin_layout Itemize
+YUV: Y'UV signals are typically created from RGB (red, green and blue) source.
+ Weighted values of R, G, and B are summed to produce Y', a measure of overall
+ brightness or luminance.
+ U and V are computed as scaled differences between Y' and the B and R values.(fr
+om wiki).
+\end_layout
+
 \end_deeper
 \begin_layout Itemize
 \begin_inset Formula $\textbf{image denoising}$
@@ -3230,13 +3238,13 @@ where
 \begin_inset Formula 
 \begin{align*}
 \min_{\alpha}\dfrac{1}{2} & \parallel x-D\alpha\parallel_{2}^{2}+\lambda\parallel\alpha\parallel_{1}\\
-\alpha^{t+1} & \leftarrow\mbox{st}\left(\alpha^{t}+\eta D^{T}\left(x-D\alpha^{t}\right);\lambda\right)
+\alpha^{t+1} & \leftarrow\mbox{st}\left(\alpha^{t}+\eta D^{T}\left(x-D\alpha^{t}\right);\lambda\eta\right)
 \end{align*}
 
 \end_inset
 
 where 
-\begin_inset Formula $\mbox{st}\left(\beta;\lambda\right)$
+\begin_inset Formula $\mbox{st}\left(;\right)$
 \end_inset
 
  is the soft-thresholding operator.
